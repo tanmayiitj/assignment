@@ -1,0 +1,82 @@
+/* Custom Styles for the Bootstrap Webpage */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.services .card-title {
+    font-size: 3rem;
+    color: #6f42c1;
+}
+
+.services .card-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.services .card-text {
+    font-size: 1rem;
+}
+
+.faqs .card-title {
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #e9ecef;
+}
+
+/* .btn btn-primary {
+    background-color: #6f42c1;
+} */
+
+.d-block-w-100 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 2000px;
+    height: 500px;
+}
+
+.carousel-item active {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-img-overlay {
+    padding: 0;
+    bottom: 0;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.btn-primary {
+    opacity: 100%;
+}
+
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    padding: 1rem;
+}
+
+.btn-opaque {
+    background-color: #6f42c1;
+    opacity: 1; /* Ensures full opacity */
+}
