@@ -1,45 +1,101 @@
 /* Custom Styles for the Bootstrap Webpage */
 
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .navbar {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .carousel-caption h5 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contSer {
+  /* Layout Properties */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 120%;
+  /* UI Properties */
+  background: url("Rectangle\ 40.png");
+  border-radius: 16px;
 }
 
+.serh1{
+/* UI Properties */
+text-align: center;
+font: normal normal 900 28px/34px Lato;
+letter-spacing: 0px;
+color: #425656;
+opacity: 1;
+padding: 30px;
+}
 .carousel-caption p {
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .services .card-title {
-    font-size: 3rem;
-    color: #6f42c1;
+  top: 711px;
+  left: 873px;
+  width: 87px;
+  height: 90px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 75px/90px Lato;
+  letter-spacing: 0px;
+  color: #885ef0;
+  opacity: 1;
+}
+
+.services .card {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  /* UI Properties */
+  background: url("Rectangle\ 3.png");
+  border-radius: 10px;
 }
 
 .services .card-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  /* Layout Properties */
+  top: 817px;
+  left: 882px;
+  width: 217px;
+  height: 19px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 16px/18px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
 }
 
 .services .card-text {
-    font-size: 1rem;
+  top: 858px;
+  left: 152px;
+  width: 247px;
+  height: 77px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 16px/22px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
 }
 
 .faqs .card-title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    border-top: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  border-top: 1px solid #e9ecef;
 }
 
 /* .btn btn-primary {
@@ -47,36 +103,36 @@ body {
 } */
 
 .d-block-w-100 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 2000px;
-    height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2000px;
+  height: 500px;
 }
 
 .carousel-item active {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-img-overlay {
-    padding: 0;
-    bottom: 0;
+  padding: 0;
+  bottom: 0;
 }
 
 .card-body {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .btn-primary {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .bg-dark-transparent {
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  padding: 1rem;
 }
 
 .btn-opaque {
-    background-color: #6f42c1;
-    opacity: 1; /* Ensures full opacity */
+  background-color: #6f42c1;
+  opacity: 1; /* Ensures full opacity */
 }
