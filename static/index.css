@@ -94,7 +94,26 @@ padding: 30px;
 }
 
 .faqs .card-title {
-  font-size: 1.5rem;
+
+/* UI Properties */
+text-align: center;
+font: normal normal 900 38px/46px Lato;
+letter-spacing: 0px;
+color: #425656;
+}
+
+.faqs .card-text{
+  text-align: center;
+font: normal normal normal 16px/20px Lato;
+letter-spacing: 0px;
+color: #425656;
+}
+
+.faqs .card-body{
+background: url('Rectangle\ 41.png');
+border-radius: 0px 0px 10px 10px;
+opacity: 0.72;
+padding: 0%;
 }
 
 .footer {
@@ -152,14 +171,6 @@ color: #425656;
   margin-right: auto;
 }
 
-.card-img-overlay {
-  padding: 0;
-  bottom: 0;
-}
-
-.card-body {
-  padding: 1rem;
-}
 
 .btn-primary {
   opacity: 100%;
@@ -167,7 +178,7 @@ color: #425656;
 
 .bg-dark-transparent {
   background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .btn-opaque {
