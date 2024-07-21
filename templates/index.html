@@ -83,7 +83,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="card-title">10</h1>
+                            <h1 class="card-title monthCard"></h1>
                             <h5 class="card-subtitle mb-2 text-muted">Sample Heading</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
                         </div>
@@ -92,7 +92,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="card-title">25</h1>
+                            <h1 class="card-title dateCard"></h1>
                             <h5 class="card-subtitle mb-2 text-muted">Sample Heading</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
                         </div>
@@ -101,7 +101,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="card-title">67</h1>
+                            <h1 class="card-title yearCard"></h1>
                             <h5 class="card-subtitle mb-2 text-muted">Sample Heading</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
                         </div>
@@ -195,10 +195,6 @@
 
     <!-- Footer -->
     <footer class="footer py-4 bg-light">
-        <div class="container text-center">
-            <p class="text-muted">&copy; 2024 Your Company. All rights reserved.</p>
-        </div>
-    </footer>
     
     <div class="container">
         <div class="row">
@@ -258,15 +254,15 @@
         </div>
     </div>
 
-    <footer class="text-center bg-dark text-white py-3">
+    
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text-muted">
+            <div class="row compInfo">
+                <div class="col-md-4 text-muted">
+                    <p >
                           &copy; Current Culture: United States - English
                       </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8" style="text-align: right;">
                     <ul class="list-inline">
                         <li class="list-inline-item">
                               <a href="#" class="text-muted">Contact Us</a>
@@ -292,6 +288,39 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script> 
+        // Define the URL for the world clock API
+const apiUrl = 'http://worldclockapi.com/api/json/utc/now';
+
+// Make the API request
+fetch(apiUrl)
+  .then(response => response.json()) // Parse the JSON from the response
+  .then(data => {
+    // Extract the current date and time from the API response
+    const currentDateTime = data.currentDateTime;
+    
+    // Extract just the date part
+    const currentDate = currentDateTime.split('T')[0];
+
+    // Split the date into year, month, and day
+    const [year, month, day] = currentDate.split('-');
+    console.log(year,day,month);
+    const dateCard = document.querySelector('.dateCard')
+    const monthCard = document.querySelector('.monthCard')
+    const yearCard = document.querySelector('.yearCard')
+
+    dateCard.innerText = day;
+    monthCard.innerText = month;
+    yearCard.innerText = year;
+    
+    
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+    </script>
 </body>
 
 </html>
