@@ -1,8 +1,4 @@
-/* Custom Styles for the Bootstrap Webpage */
-/* 
-body {
-  font-family: "Arial", sans-serif;
-} */
+
 
 .navbar {
   margin-bottom: 20px;
@@ -22,10 +18,20 @@ body {
   width: 100%;
   height: 120%;
   /* UI Properties */
-  background: url("Rectangle\ 40.png");
+  background: url("Rectangle\ 40.png") no-repeat;
+  background-size: cover;
   border-radius: 16px;
-}
+  margin-left: auto;
+  margin-right: auto;
 
+}
+@media (max-width: 768px) {
+  .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 1rem;
+  }
+}
 .serh1{
 /* UI Properties */
 text-align: center;
@@ -83,7 +89,7 @@ padding: 30px;
 .services .card-text {
   top: 858px;
   left: 152px;
-  width: 247px;
+  /* width: 247px; */
   height: 77px;
   /* UI Properties */
   text-align: left;
@@ -91,7 +97,10 @@ padding: 30px;
   letter-spacing: 0px;
   color: #425656;
   opacity: 1;
+
+  
 }
+
 
 .faqs .card-title {
 
@@ -100,6 +109,7 @@ text-align: center;
 font: normal normal 900 38px/46px Lato;
 letter-spacing: 0px;
 color: #425656;
+opacity: 1;
 }
 
 .faqs .card-text{
@@ -107,13 +117,44 @@ color: #425656;
 font: normal normal normal 16px/20px Lato;
 letter-spacing: 0px;
 color: #425656;
+
+
 }
 
+@media (max-width: 768px) {
+  .faqs .card {
+      margin-bottom: 1.5rem; /* Increase margin for smaller screens */
+  }
+  .faqs .card-text{
+    text-align: center;
+    font: normal normal normal 14px/20px Lato;
+    letter-spacing: 0px;
+    color: #425656;
+    overflow: hidden;
+  white-space: nowrap;
+  /* text-overflow: ellipsis; */
+  
+
+  }
+  .faqs .card-title{
+    text-align: center;
+    font: normal normal 900 18px/22px Lato;
+    letter-spacing: 0px;
+    color: #425656;
+    opacity: 1;
+  }
+}
 .faqs .card-body{
-background: url('Rectangle\ 41.png');
+
+background: url('Rectangle\ 41@2x.png') no-repeat;
+background-size: cover;
 border-radius: 0px 0px 10px 10px;
-opacity: 0.72;
+opacity: 1;
 padding: 0%;
+padding-bottom: 20px;
+overflow: hidden;
+  white-space: nowrap;
+  /* text-overflow: ellipsis; */
 }
 
 .footer {
@@ -122,17 +163,22 @@ left: -22px;
 /* UI Properties */
 background: url('Rectangle\ 20.png');
 }
+@media (max-width: 768px) {
+  .footer .toHide {
+      display: none;
+  }
+}
 
 .compInfo{
-  /* Layout Properties */
-top: 1867px;
-left: 1098px;
+
 /* UI Properties */
 text-align: left;
 font: normal normal bold 12px/18px Lato;
 letter-spacing: 0px;
 color:#425656;
 padding-top: 30px;
+justify-content: space-between;
+flex-wrap: nowrap;
 }
 
 
@@ -146,7 +192,19 @@ font: normal normal normal 12px/22px Lato;
 letter-spacing: 0px;
 color: #425656;
 }
+@media (max-width: 768px) {
+  .col-md-4, .col-md-8 {
+    flex: 1 1 auto; /* Ensure columns take up available space */
+  }
+  
+  .col-md-8 {
+    text-align: right; /* Adjust text alignment if necessary */
+  }
 
+  .text-muted p, .text-muted a {
+    font-size: 12px; /* Adjust font size to fit better */
+  }
+}
 h4{
 
 /* UI Properties */
@@ -170,18 +228,46 @@ color: #425656;
   margin-left: auto;
   margin-right: auto;
 }
+.faq1,.faq2{
+  padding: 0%;
+  border-radius: 10px;
+  opacity: 0.8;
+}
 
+.btn{
+width: 160px;
+height: 40px;
+border-radius: 3px;
+opacity: 1;
+}
 
 .btn-primary {
   opacity: 100%;
 }
 
-.bg-dark-transparent {
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  /* padding: 1rem; */
-}
 
 .btn-opaque {
   background-color: #6f42c1;
   opacity: 1; /* Ensures full opacity */
+}
+
+.headingFaq{
+text-align: center;
+font: normal normal 900 28px/34px Lato;
+letter-spacing: 0px;
+color: #425656;
+opacity: 1;
+padding: 25px;
+}
+
+.infoFaq{
+
+ /* width: 881px; */
+text-align: center;
+font: normal normal normal 16px/22px Lato;
+letter-spacing: 0px;
+opacity: 1;
+width: 45%;
+margin-left: auto;
+margin-right: auto;
 }
