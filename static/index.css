@@ -1,12 +1,161 @@
-
-
-.navbar {
-  margin-bottom: 20px;
+.container-fluid {
+  width: 90%;
 }
 
+.carousel-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+}
+
+#searchButton {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.navbar .btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+.carousel h3 {
+  width: 181px;
+  height: 46px;
+  text-align: left;
+  font: normal normal 900 38px/46px Lato;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+/* 
+.carousel-inner img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio 
+} 
+*/
+
 .carousel-caption {
-  position: absolute;  top: 50%;  left: 10px;  transform: translateY(-50%);  /* Offset the vertical position for centering */
-  color: white;  background-color: rgba(0, 0, 0, 0.5);  padding: 15px;  text-align: left;  
+
+  /* position: absolute; */
+  width: 75%;
+  top: 50%;
+  /* Center vertically */
+  left: 10px;
+  /* Adjust as needed for left alignment */
+  transform: translate(15%, -40%);
+  border-radius: 5px;
+  /* Optional: add border radius */
+}
+
+.carousel-caption p {
+  top: 256px;
+  left: 150px;
+  width: 342px;
+  height: 64px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 18px/20px Lato;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.carousel-caption .carousel-button {
+  margin-left: 0;
+  /* Remove the default margin-left if needed */
+}
+
+.carousel .btnCarousel {
+  background: transparent url('Rectangle\ 39.png');
+  background-color: #885ef0;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  padding: 0%;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption p {
+    top: 147px;
+    left: 84px;
+    width: 300px;
+    height: 42px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 14px/20px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+  .carousel h3 {
+    top: 98px;
+    left: 84px;
+    width: 143px;
+    height: 36px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 900 30px/36px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+  .carousel .btnCarousel {
+
+    width: 105px;
+    height: 30px;
+
+  }
+  .carousel-caption{
+    top: 45%;
+  }
+}
+
+@media (max-width: 465px) {
+  .carousel-caption p {
+
+    width: 240px;
+    height: 22px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal 600 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .carousel h3 {
+    
+    width: 238px;
+    height: 22px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal 900 18px/22px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+  .carousel-caption{
+    top: 28%;
+  }
+  .carousel .btnCarousel {
+
+    
+    width: 77px;
+    height: 15px;
+    font-size: xx-small;
+
+  }
+
 }
 
 .contSer {
@@ -25,25 +174,23 @@
   margin-right: auto;
 
 }
+
 @media (max-width: 768px) {
   .col-md-4 {
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-bottom: 1rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
 }
-.serh1{
-/* UI Properties */
-text-align: center;
-font: normal normal 900 28px/34px Lato;
-letter-spacing: 0px;
-color: #425656;
-opacity: 1;
-padding: 30px;
-}
-.carousel-caption p {
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+.serh1 {
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 900 28px/34px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+  padding: 30px;
 }
 
 .services .card-title {
@@ -58,11 +205,13 @@ padding: 30px;
   color: #885ef0;
   opacity: 1;
 }
-.yearCard{
+
+.yearCard {
   width: 100%;
   height: 100%;
   color: black;
 }
+
 .services .card {
   width: 100%;
   height: 100%;
@@ -98,45 +247,48 @@ padding: 30px;
   color: #425656;
   opacity: 1;
 
-  
+
 }
 
 
 .faqs .card-title {
 
-/* UI Properties */
-text-align: center;
-font: normal normal 900 38px/46px Lato;
-letter-spacing: 0px;
-color: #425656;
-opacity: 1;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 900 38px/46px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
 }
 
-.faqs .card-text{
+.faqs .card-text {
   text-align: center;
-font: normal normal normal 16px/20px Lato;
-letter-spacing: 0px;
-color: #425656;
+  font: normal normal normal 16px/20px Lato;
+  letter-spacing: 0px;
+  color: #425656;
 
 
 }
 
 @media (max-width: 768px) {
   .faqs .card {
-      margin-bottom: 1.5rem; /* Increase margin for smaller screens */
+    margin-bottom: 1.5rem;
+    /* Increase margin for smaller screens */
   }
-  .faqs .card-text{
+
+  .faqs .card-text {
     text-align: center;
     font: normal normal normal 14px/20px Lato;
     letter-spacing: 0px;
     color: #425656;
     overflow: hidden;
-  white-space: nowrap;
-  /* text-overflow: ellipsis; */
-  
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+
 
   }
-  .faqs .card-title{
+
+  .faqs .card-title {
     text-align: center;
     font: normal normal 900 18px/22px Lato;
     letter-spacing: 0px;
@@ -144,75 +296,86 @@ color: #425656;
     opacity: 1;
   }
 }
-.faqs .card-body{
 
-background: url('Rectangle\ 41@2x.png') no-repeat;
-background-size: cover;
-border-radius: 0px 0px 10px 10px;
-opacity: 1;
-padding: 0%;
-padding-bottom: 20px;
-overflow: hidden;
+.faqs .card-body {
+
+  background: url('Rectangle\ 41@2x.png') no-repeat;
+  background-size: cover;
+  border-radius: 0px 0px 10px 10px;
+  opacity: 1;
+  padding: 0%;
+  padding-bottom: 20px;
+  overflow: hidden;
   white-space: nowrap;
   /* text-overflow: ellipsis; */
 }
 
 .footer {
   top: 1649px;
-left: -22px;
-/* UI Properties */
-background: url('Rectangle\ 20.png');
+  left: -22px;
+  /* UI Properties */
+  background: url('Rectangle\ 20.png');
 }
+
 @media (max-width: 768px) {
   .footer .toHide {
-      display: none;
+    display: none;
   }
 }
 
-.compInfo{
+.compInfo {
 
-/* UI Properties */
-text-align: left;
-font: normal normal bold 12px/18px Lato;
-letter-spacing: 0px;
-color:#425656;
-padding-top: 30px;
-justify-content: space-between;
-flex-wrap: nowrap;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 12px/18px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  padding-top: 30px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 
-.list-unstyled{
+.list-unstyled {
   /* Layout Properties */
-top: 1727px;
-left: 150px;
-/* UI Properties */
-text-align: left;
-font: normal normal normal 12px/22px Lato;
-letter-spacing: 0px;
-color: #425656;
+  top: 1727px;
+  left: 150px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal normal 12px/22px Lato;
+  letter-spacing: 0px;
+  color: #425656;
 }
+
 @media (max-width: 768px) {
-  .col-md-4, .col-md-8 {
-    flex: 1 1 auto; /* Ensure columns take up available space */
-  }
-  
+
+  .col-md-4,
   .col-md-8 {
-    text-align: right; /* Adjust text alignment if necessary */
+    flex: 1 1 auto;
+    /* Ensure columns take up available space */
   }
 
-  .text-muted p, .text-muted a {
-    font-size: 12px; /* Adjust font size to fit better */
+  .col-md-8 {
+    text-align: right;
+    /* Adjust text alignment if necessary */
+  }
+
+  .text-muted p,
+  .text-muted a {
+    font-size: 12px;
+    /* Adjust font size to fit better */
   }
 }
-h4{
 
-/* UI Properties */
-text-align: left;
-font: normal normal bold 14px/19px Lato;
-letter-spacing: 0px;
-color: #425656;
+h4 {
+
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 14px/19px Lato;
+  letter-spacing: 0px;
+  color: #425656;
 }
+
 /* .btn btn-primary {
     background-color: #6f42c1;
 } */
@@ -224,21 +387,18 @@ color: #425656;
   height: 500px;
 }
 
-.carousel-item active {
-  margin-left: auto;
-  margin-right: auto;
-}
-.faq1,.faq2{
+.faq1,
+.faq2 {
   padding: 0%;
   border-radius: 10px;
   opacity: 0.8;
 }
 
-.btn{
-width: 160px;
-height: 40px;
-border-radius: 3px;
-opacity: 1;
+.btn {
+  width: 160px;
+  height: 40px;
+  border-radius: 3px;
+  opacity: 1;
 }
 
 .btn-primary {
@@ -248,26 +408,27 @@ opacity: 1;
 
 .btn-opaque {
   background-color: #6f42c1;
-  opacity: 1; /* Ensures full opacity */
+  opacity: 1;
+  /* Ensures full opacity */
 }
 
-.headingFaq{
-text-align: center;
-font: normal normal 900 28px/34px Lato;
-letter-spacing: 0px;
-color: #425656;
-opacity: 1;
-padding: 25px;
+.headingFaq {
+  text-align: center;
+  font: normal normal 900 28px/34px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+  padding: 25px;
 }
 
-.infoFaq{
+.infoFaq {
 
- /* width: 881px; */
-text-align: center;
-font: normal normal normal 16px/22px Lato;
-letter-spacing: 0px;
-opacity: 1;
-width: 45%;
-margin-left: auto;
-margin-right: auto;
+  /* width: 881px; */
+  text-align: center;
+  font: normal normal normal 16px/22px Lato;
+  letter-spacing: 0px;
+  opacity: 1;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
 }
