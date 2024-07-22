@@ -78,6 +78,7 @@
   border-radius: 5px;
   opacity: 1;
   padding: 0%;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -108,7 +109,7 @@
   }
 
   .carousel .btnCarousel {
-
+    
     width: 105px;
     height: 30px;
 
@@ -153,6 +154,9 @@
     width: 77px;
     height: 15px;
     font-size: xx-small;
+    position: relative;
+    top: 28%;
+    left: 5%;
 
   }
 

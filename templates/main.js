@@ -13,3 +13,7 @@ function searchWebsite() {
       return false; // Prevent form submission
     }
   }
+
+  var year2 = new Date().getFullYear();
+  document.getElementById('micro').innerText = year2;
+

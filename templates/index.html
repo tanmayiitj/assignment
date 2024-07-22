@@ -47,7 +47,7 @@
                     
                     <input class="form-control" id="searchInput" type="search" placeholder="Search" aria-label="Search">
                     <button  id="searchButton" type="submit">
-                      <i style="font-size:24px; color:#909C9C;" class="fa">&#xf002;</i>
+                      <i style="font-size:15px; color:#909C9C;" class="fa">&#xf002;</i>
                   </button>
                 </div>
             </form>
@@ -277,7 +277,7 @@
               <a href="#" class="text-muted">About our ads</a>
             </li>
             <li class="list-inline-item">
-              <a href="#" class="text-muted">&copy; Microsoft 2024</a>
+              <a href="#" class="text-muted">&copy; Microsoft <span id = "micro"></span></a>
             </li>
           </ul>
         </div>
@@ -288,10 +288,10 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  <script src="main.js"></script>
   <script>
     // Create a new Date object for the current date and time
-const today = new Date();
+    const today = new Date();
 
 // Get the current day of the month
 const day = today.getDate();
